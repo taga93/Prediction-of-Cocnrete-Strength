@@ -35,7 +35,7 @@ def prediction_accuracy(input_data):
 
     info = "Strength prediction accuracy for this dataset: " + str(score) + " %"
 
-    return info, regression, variables, results, variables, results
+    return info, regression, variables, results
 
 #print(prediction_accuracy(data)[0])
 #print(prediction_accuracy(data_less_than_3days)[0])
