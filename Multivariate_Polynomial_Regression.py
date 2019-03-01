@@ -35,7 +35,7 @@ def prediction_accuracy(input_data):
 
     info = "Strength prediction accuracy for this dataset: " + str(score) + " %"
 
-    return info, regression, variables, results, variables, results
+    return info, regression, variables, results
 
 #print(prediction_accuracy(data)[0])
 #print(prediction_accuracy(data_less_than_3days)[0])
@@ -46,8 +46,8 @@ def prediction_accuracy(input_data):
 def polynomial_prediction_of_future_strength(input_data, cement, blast_fur_slug,fly_ash,
                                               water, superpl, coarse_aggr, fine_aggr, days):
 
-    variables = prediction_accuracy(input_data)[4]
-    results = prediction_accuracy(input_data)[5]
+    variables = prediction_accuracy(input_data)[2]
+    results = prediction_accuracy(input_data)[3]
     n = results.shape[0]
     results = results.values.reshape(n,1) #reshaping the values so that variables and results have the same shape
 
